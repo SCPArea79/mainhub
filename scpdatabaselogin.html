@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    @font-face {
+      font-family: SCPfont;
+      src: url(Fonts/scpFont.otf);
+    }
+
+    * {
+      font-family: SCPFont;
+      color: white;
+    }
+
+    input {
+      color: black;
+    }
+
+    option {
+      color: black;
+      font-family: SCPFont;
+      font-size: 20px;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      background-color: black;
+    }
+  </style>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCP Database Login</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.jpg" />
+  </head>
+  <body>
+    <img
+      src="Images/scplogo.jpg"
+      alt="Area-79 Logo"
+      style="width: 250px; height: 250px; margin-top: 350px"
+    />
+    <h1 style="color: red; font-size: 45px">
+      <em style="color: aqua; font-style: normal">Area-79</em> SCP Database
+      Login
+    </h1>
+
+    <input
+      id="First"
+      placeholder="First Name"
+      style="font-size: 20px; margin-bottom: 20px"
+    />
+    <input
+      id="Last"
+      placeholder="Last Name"
+      style="font-size: 20px; margin-bottom: 20px"
+    />
+
+    <label for="clearance" style="font-size: 25px; margin-bottom: 10px"
+      >Select clearance Level:</label
+    >
+    <select
+      id="clearance"
+      style="color: black; font-size: 20px; margin-bottom: 30px"
+    >
+      <option value="Level1">Level 1</option>
+      <option value="Level2">Level 2</option>
+      <option value="Level3">Level 3</option>
+      <option value="Level4">Level 4</option>
+      <option value="Level5">Level 5</option>
+    </select>
+
+    <button
+      id="loginButton"
+      onClick="Login()"
+      style="color: black; font-size: 25px"
+    >
+      Login
+    </button>
+
+    <script>
+      function Login() {
+        location.href =
+          "https://sites.google.com/view/area-79-scp-database/home";
+      }
+    </script>
+  </body>
+</html>

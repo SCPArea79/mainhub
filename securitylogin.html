@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    @font-face {
+      font-family: SCPFont;
+      src: url(fonts/scpFont.otf);
+    }
+
+    * {
+      font-family: SCPFont;
+    }
+
+    em {
+      color: aqua;
+      font-style: normal;
+    }
+
+    body {
+      background-color: rgb(37, 37, 37);
+      display: grid;
+      place-items: center;
+    }
+  </style>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security Department Login Page</title>
+    <link rel="icon" type="images" href="images/SecDep.jpg" />
+  </head>
+  <body>
+    <img
+      src="Images/SecDep.jpg"
+      alt="Security Department Logo"
+      style="width: 250px; height: 250px; margin-top: 350px"
+    />
+    <h1 style="font-size: 45px; margin-bottom: 50px; color: grey">
+      Security Department of <em>Area-79</em>
+    </h1>
+    <input id="user" placeholder="Username" style="font-size: 25px" />
+    <input
+      id="pass"
+      placeholder="Password"
+      type="password"
+      style="font-size: 25px; margin-top: 25px"
+    />
+    <button onClick="Login()" style="font-size: 25px; margin-top: 30px">
+      Login
+    </button>
+    <p
+      id="incorrectMessage"
+      style="color: red; margin-top: 25px; font-size: 25px; visibility: hidden"
+    >
+      Incorrect Username or Password
+    </p>
+
+    <script src="Scripts/LoginButton.js"></script>
+  </body>
+</html>
