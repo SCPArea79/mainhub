@@ -54,6 +54,26 @@
       Incorrect Username or Password
     </p>
 
-    <script src="Scripts/LoginButton.js"></script>
+    <script>
+      var wrongCounter = 0;
+
+      function Login() {
+        var user = document.getElementById("user");
+        var pass = document.getElementById("pass");
+        var wrongMsg = document.getElementById("incorrectMessage");
+
+        if (user.value == "Area79Security" && pass.value == "SDontop") {
+          location.href = "https://sites.google.com/view/area79sdhub/home";
+        } else {
+          wrongCounter = wrongCounter + 1;
+          pass.value = "";
+          wrongMsg.style.visibility = "visible";
+        }
+
+        if (wrongCounter == 3) {
+          location.href = "https://scparea79.github.io/accessdenied/";
+        }
+      }
+    </script>
   </body>
 </html>
