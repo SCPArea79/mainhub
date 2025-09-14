@@ -78,10 +78,21 @@
       Login
     </button>
 
+    <p
+      id="wrongMessage"
+      style="color: red; visibility: hidden; font-size: 30px"
+    >
+      Please enter your First and Last Name
+    </p>
+
     <script>
       function Login() {
-        location.href =
-          "https://sites.google.com/view/area-79-scp-database/home";
+        if (First.value != "" && Last.value != "") {
+          location.href =
+            "https://sites.google.com/view/area-79-scp-database/home";
+        } else {
+          document.getElementById("wrongMessage").style.visibility = "visible";
+        }
       }
     </script>
   </body>
