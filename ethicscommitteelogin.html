@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethics Committee Login Page</title>
+    <link rel="icon" type="images" href="images/ecLogo.png" />
+    <link rel="stylesheet" href="stylesheets/ethicsstylesheet.css" />
+  </head>
+  <body>
+    <img
+      id="FoundationLogo"
+      src="images/FoundationLogo.png"
+      alt="Ethics Committee Logo"
+    />
+
+    <div class="FlexContainer">
+      <img
+        id="EthicsLogo"
+        src="images/ecLogoWhite.png"
+        alt="Ethics Committee Logo"
+      />
+
+      <h1 id="Header">Ethics Committee Login Page</h1>
+
+      <input id="user" placeholder="Username" />
+      <input id="pass" type="password" placeholder="Password" />
+
+      <button id="LoginButton" onClick="LoginButton()">Login</button>
+
+      <p id="WrongMsg">Incorrect Username or Password</p>
+    </div>
+
+    <script src="Scripts/ECLoginButton.js" />
+  </body>
+</html>
