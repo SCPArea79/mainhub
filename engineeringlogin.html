@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    @font-face {
+      font-family: scpFont;
+      src: url(Fonts/scpFont.otf);
+    }
+
+    * {
+      font-family: scpFont;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      background-color: rgb(70, 80, 101);
+    }
+  </style>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Area-79 Engineering Department Login Page</title>
+  </head>
+  <body>
+    <img
+      src="images/EngiLogo.webp"
+      alt="EngineeringLogo"
+      style="width: 310px; height: 320px; margin-top: 350px"
+    />
+
+    <input
+      id="user"
+      placeholder="Username:"
+      style="font-size: 30px; margin-top: 25px"
+    />
+    <input
+      id="pass"
+      type="password"
+      placeholder="Password:"
+      style="font-size: 30px; margin-top: 25px"
+    />
+    <button onClick="LoginButton()" style="font-size: 30px; margin-top: 30px">
+      Login
+    </button>
+    <p
+      id="wrongMsg"
+      style="font-size: 30px; margin: 25px; color: red; visibility: hidden"
+    >
+      Incorrect Username or Password. Please try again.
+    </p>
+  </body>
+
+  <script>
+    var wrongCounter = 0;
+
+    function LoginButton() {
+      var user = document.getElementById("user");
+      var pass = document.getElementById("pass");
+      var wrong = document.getElementById("wrongMsg");
+
+      if (user.value == "Area79Engineering" && pass.value != "") {
+        location.href =
+          "https://sites.google.com/view/area79engineeringhub/home";
+      } else if (user.value == "Secret" && pass.value == "Password") {
+        location.href =
+          "https://awesomeness3301.github.io/howdidyoufindthis.github.io/";
+      } else {
+        wrongCounter = wrongCounter + 1;
+        wrong.style.visibility = "visible";
+      }
+
+      if (wrongCounter == 3) {
+        location.href = "accessdenied.html";
+      }
+    }
+  </script>
+</html>
