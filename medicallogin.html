@@ -21,8 +21,8 @@
     h1 {
       color: rgb(255, 255, 255);
       font-family: scpFont;
-      font-style: italic;
-      font-size: 40px;
+      font-style: normal;
+      font-size: 50px;
       margin-bottom: 50px;
     }
 
@@ -38,20 +38,19 @@
     }
 
     input {
-      margin-bottom: 25px;
-      font-size: 20px;
+      margin-top: 25px;
+      font-size: 30px;
     }
 
     button {
       font-family: scpFont;
       font-size: 30px;
-      margin: auto;
-      margin-top: 25px;
-      margin-bottom: 25px;
+      margin-top: 30px;
     }
 
     em {
       color: rgb(0, 234, 255);
+      font-style: normal;
     }
 
     #errorMessage {
@@ -74,7 +73,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Area-79 Medical Login Page</title>
-    <link rel="shortcut icon" type="image/jpg" href="images/favicon.jpg" />
+    <link rel="shortcut icon" type="image/jpg" href="images/medlogo.jpg" />
   </head>
   <body>
     <center>
@@ -83,7 +82,7 @@
         src="images/medlogo.jpg"
         alt="Medical Department logo"
       />
-      <h1><em>Area-79</em> Medical Login Page</h1>
+      <h1>Medical Department of <em>Area-79</em></h1>
       <input id="user" placeholder="Username:" /> <br />
       <input id="pass" type="password" placeholder="Password:" /> <br />
       <button onClick="buttonPress()">Login</button>
