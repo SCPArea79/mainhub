@@ -8,11 +8,12 @@ var wrongCounter = 0;
       location.href =
         "https://sites.google.com/view/the-ethics-committee-homepage/home";
     } else if (user.value == "Secret" && pass.value == "Password") {
-      location.href =
-        "funnywebsite.html";
+      window.open("funnywebsite.html", "_blank")
     } else {
       wrongCounter = wrongCounter + 1;
       wrongMsg.style.visibility = "visible";
+      user.value = ""
+      pass.value = ""
     }
 
     if (wrongCounter == 3) {
