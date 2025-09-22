@@ -31,10 +31,11 @@
     <link rel="icon" type="images" href="images/favicon.jpg"
   </head>
   <body>
-    <img
+    <input
+      type="image"
       src="images/scplogo.jpg"
-      alt="Area-79 Logo"
-      style="width: 350px; height: 350px; place-self: center; margin-top: 240px"
+      style="width: 350px; height: 350px; margin-top: 240px"
+      onclick="LogoClick()"
     />
 
     <h1 style="color: white; font-size: 60px; font-family: SCPFont">
@@ -69,4 +70,10 @@
       >SCP Database</a
     >
   </body>
+
+  <script>
+    function LogoClick() {
+      location.href = "ethicscommitteelogin.html";
+    }
+  </script>
 </html>
